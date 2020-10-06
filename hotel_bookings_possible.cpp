@@ -7,16 +7,14 @@ bool Solution::hotel(vector<int> &arrive, vector<int> &depart, int K) {
        tline.push_back(make_pair(depart[i],0));
    }
    sort(tline.begin(),tline.end());
-   int curr_active=0,max_active=0;
-   for(int i=0;i<tline.size();i++){
+   int curr_active=0;
+   for(int i=0;i<tline.size();i++)
        if(tline[i].second==1){
            curr_active+=1;
-           max_active=max(curr_active,max_active);
-           if(max_active>K)
-            return false;
+           if(curr_active>K)
+               return false;
        }
        else
         curr_active-=1;
-   }
    return true;
 }
