@@ -6,7 +6,7 @@ int Solution::firstMissingPositive(vector<int> &A) {
             if(A[pos]!=A[i]){
                 int temp=A[pos];
                 A[pos]=A[i];
-                A[i]=A[pos];
+                A[i]=temp;
                 i--;
             }
 
