@@ -22,3 +22,18 @@ public:
         return true;
     }
 };
+
+//////Actually This is way faster
+ListNode *is_cycle(ListNode *head){
+        if(head==NULL || head->next==NULL)
+            return NULL;
+        ListNode *tt=head;
+        ListNode *rb=head;
+        while(rb!=NULL && rb->next!=NULL){
+            rb=rb->next->next;
+            tt=tt->next;
+            if(rb==tt)
+                return rb;
+        }
+        return NULL;
+    }
