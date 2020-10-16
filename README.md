@@ -29,3 +29,18 @@ This file contains solution for the set of questions received from Placement uni
 >https://practice.geeksforgeeks.org/problems/inversion-of-array/0/<br />
 >https://practice.geeksforgeeks.org/problems/largest-number-formed-from-an-array/0<br />
 >https://leetcode.com/problems/subarray-sum-equals-k/ (impt) (added new)<br />
+
+### Linked List
+
+#### Easy
+>https://leetcode.com/problems/linked-list-cycle<br />
+>https://leetcode.com/problems/linked-list-cycle-ii<br />
+>https://leetcode.com/problems/reorder-list<br />
+>https://www.interviewbit.com/problems/remove-duplicates-from-sorted-list/<br />
+>https://www.interviewbit.com/problems/merge-two-sorted-lists/<br />
+>https://www.interviewbit.com/problems/remove-nth-node-from-list-end/<br />
+>https://www.interviewbit.com/problems/k-reverse-linked-list/<br />
+>https://www.interviewbit.com/problems/swap-list-nodes-in-pairs/<br />
+>https://www.interviewbit.com/problems/rotate-list/<br />
+>https://practice.geeksforgeeks.org/problems/check-if-linked-list-is-pallindrome/1<br />
+
