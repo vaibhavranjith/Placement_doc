@@ -44,3 +44,9 @@ This file contains solution for the set of questions received from Placement uni
 >https://www.interviewbit.com/problems/rotate-list/<br />
 >https://practice.geeksforgeeks.org/problems/check-if-linked-list-is-pallindrome/1<br />
 
+#### Hard
+
+>https://leetcode.com/problems/copy-list-with-random-pointer (vv imp)<br />
+>https://www.interviewbit.com/problems/remove-duplicates-from-sorted-list-ii/<br />
+
+
