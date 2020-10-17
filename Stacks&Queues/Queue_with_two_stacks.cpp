@@ -1,3 +1,5 @@
+//https://www.youtube.com/watch?v=Wg8IiY1LbII check this video out contains an O(1) amortized worst case.
+
 /* The structure of the class is
 class StackQueue{
 private:   
