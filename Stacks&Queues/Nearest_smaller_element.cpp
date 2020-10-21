@@ -5,8 +5,7 @@ vector<int> Solution::prevSmaller(vector<int> &A) {
         if(st.empty())
             g.push_back(-1);
         else{
-            while(!st.empty() and st.top()>=A[i])
-                st.pop();
+            while(!st.empty() and st.top()>=A[i])st.pop();
             if(st.empty())
                 g.push_back(-1);
             else
