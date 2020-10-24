@@ -30,7 +30,7 @@ This file contains solution for the set of questions received from Placement uni
 >https://practice.geeksforgeeks.org/problems/largest-number-formed-from-an-array/0<br />
 >https://leetcode.com/problems/subarray-sum-equals-k/ (impt) (added new)<br />
 
-<hr><br />
+
 ### Linked List
 
 #### Easy
@@ -50,7 +50,7 @@ This file contains solution for the set of questions received from Placement uni
 >https://leetcode.com/problems/copy-list-with-random-pointer (vv imp)<br />
 >https://www.interviewbit.com/problems/remove-duplicates-from-sorted-list-ii/<br />
 
-<hr><br />
+
 ### Stacks & Queues
 
 #### Easy
