@@ -22,7 +22,7 @@ This file contains solution for the set of questions received from Placement uni
 >https://www.interviewbit.com/problems/remove-element-from-array/<br />
 >https://www.interviewbit.com/problems/trailing-zeros-in-factorial/<br />
 >https://www.interviewbit.com/problems/grid-unique-paths/<br />
-
+<hr>
 #### Hard
 >https://www.interviewbit.com/problems/n3-repeat-number/ (can avoid)<br />
 >https://www.interviewbit.com/problems/container-with-most-water/<br />
