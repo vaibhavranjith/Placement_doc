@@ -50,3 +50,28 @@ This file contains solution for the set of questions received from Placement uni
 >https://www.interviewbit.com/problems/remove-duplicates-from-sorted-list-ii/<br />
 
 
+### Stacks & Queues
+
+#### Easy
+
+>https://practice.geeksforgeeks.org/problems/queue-using-two-stacks/1<br />
+>https://practice.geeksforgeeks.org/problems/stack-using-two-queues/1<br />
+>https://practice.geeksforgeeks.org/problems/parenthesis-checker/0<br />
+>https://practice.geeksforgeeks.org/problems/get-minimum-element-from-stack/1<br />
+>https://www.interviewbit.com/problems/rain-water-trapped/<br />
+>https://leetcode.com/problems/simplify-path/<br />
+>https://leetcode.com/problems/design-circular-queue/<br />
+
+
+#### Hard
+
+>https://www.interviewbit.com/problems/sliding-window-maximum/<br />
+>https://www.interviewbit.com/problems/largest-rectangle-in-histogram/<br />
+>https://www.interviewbit.com/problems/nearest-smaller-element/<br />
+>https://leetcode.com/problems/next-greater-node-in-linked-list/<br />
+>https://leetcode.com/problems/daily-temperatures/<br />
+>https://leetcode.com/problems/daily-temperatures/<br />
+>https://leetcode.com/problems/evaluate-reverse-polish-notation/<br />
+
+
+
