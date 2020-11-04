@@ -1,3 +1,7 @@
+//Actually this did'nt pass every test case in interview bit so check this link 
+//https://www.geeksforgeeks.org/allocate-minimum-number-pages/
+
+
 long isPossible(vector<int> arr,int nb,int ns){
     int acc=0;
     int s=1;
