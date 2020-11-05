@@ -16,7 +16,7 @@ int Solution::longestSubsequenceLength(const vector<int> &A) {
     }
     int j=1;
     while(j<A.size()){
-        for(int i=0;i<j;i++){
+        for(int i=0;i<j;i++)
             if(A[i]<A[j]){
                 dp[0][j] = dp[0][i]+1 > dp[0][j] ? dp[0][i]+1 : dp[0][j];
             }
@@ -24,10 +24,6 @@ int Solution::longestSubsequenceLength(const vector<int> &A) {
                 int temp = dp[1][i]+1 > dp[0][i]+1 ? dp[1][i]+1  :  dp[0][i]+1;
                 dp[1][j] = temp > dp[1][j] ? temp : dp[1][j];
             }
-            else{
-                continue;
-            }
-        }
         j++;
     }
     return maximum_dp(A.size());
