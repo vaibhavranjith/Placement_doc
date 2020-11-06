@@ -1,8 +1,8 @@
 int dp[453][453];
-
 int tri_min(int a,int b,int c){
     return min(min(a,b),c);
 }
+
 int Solution::minDistance(string A, string B) {
     for(int i=1;i<=A.length();i++)  dp[0][i]=dp[0][i-1]+1;
     for(int i=1;i<=B.length();i++)  dp[i][0]=dp[i-1][0]+1;
