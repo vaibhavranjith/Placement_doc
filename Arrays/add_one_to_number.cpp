@@ -4,7 +4,7 @@ vector<int> Solution::plusOne(vector<int> &arr) {
     arr[n-1]=arr[n-1]+1;
     c=arr[n-1]/10;
     arr[n-1]=arr[n-1]%10;
-    for(int i=arr.size()-1;i>=0;i--){
+    for(int i=arr.size()-2;i>=0;i--){
         if(c==1){
             arr[i]=arr[i]+c+1;
             c=arr[i]/10;
