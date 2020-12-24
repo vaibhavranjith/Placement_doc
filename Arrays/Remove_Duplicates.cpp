@@ -4,5 +4,6 @@ int Solution::removeDuplicates(vector<int> &A) {
         if(A[i]!=A[i+1]){
             A[index++]=A[i+1];
         }
-   return index;
+    A.erase(A.begin()+index,A.end());
+    return A.size();
 }
