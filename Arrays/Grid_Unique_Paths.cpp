@@ -1,4 +1,3 @@
-
 int Solution::uniquePaths(int A, int B) {
     vector<vector<int>> dp(A,vector<int>(B,0));
     for(int i=0;i<A;i++)
