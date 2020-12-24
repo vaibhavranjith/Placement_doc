@@ -6,26 +6,25 @@
  *     ListNode(int x) : val(x), next(NULL) {}
  * };
  */
+
+
 ListNode* Solution::mergeTwoLists(ListNode* A, ListNode* B) {
-    ListNode head(-1);
-    ListNode *last=&head;
-    while(A!=NULL and B!=NULL){
+    ListNode* head=new ListNode(-1);
+    ListNode* temp=head;
+    while(A!=NULL and B!=NULL)
         if(A->val>B->val){
-           last->next=B;
-           last=B;
-           B=B->next;
+            head->next=B;
+            head=B;
+            B=B->next;
         }
         else{
-            last->next=A;
-            last=A;
+            head->next=A;
+            head=A;
             A=A->next;
         }
-    }
-    if(A!=NULL){
-        last->next=A;
-    }
-    if(B!=NULL){
-        last->next=B;
-    }
-    return head.next;
+    if(A!=NULL)
+        head->next=A;
+    else if(B!=NULL)
+        head->next=B;
+    return temp->next;
 }
