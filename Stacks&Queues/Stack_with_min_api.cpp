@@ -36,23 +36,10 @@ int _stack ::pop()
 /*push element x into the stack*/
 void _stack::push(int x)
 {
-    if(s.empty()){
-        min_cache.push(make_pair(x,1));
-        s.push(x);
-        return;
-    }
-    if( x==min_cache.top().first){
+     if(s.empty() || x<min_cache.top().first)
+        min_cache.push({x,1});
+    else
         min_cache.top().second++;
-        s.push(x);
-        return;
-    }
-    else if(x<min_cache.top().first){
-        min_cache.push(make_pair(x,1));
-        s.push(x);
-        return;
-    }else{
-        min_cache.top().second++;
-        s.push(x);
-        return;
-    }
+    s.push(x);
+    return;
 }
