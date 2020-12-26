@@ -1,3 +1,8 @@
+// Look at this run to have a better understanding:
+//  A:        0   1   0   2   1   0   1   3   2   1   2   1
+//  left:     0   1   1   2   2   2   2   3   3   3   3   3
+//  right:    3   3   3   3   3   3   3   3   2   2   2   1
+//  area:     0   0   1   0   1   2   1   0   0   1   0   0
 int Solution::trap(const vector<int> &A) {
     int area=0;
     vector<int> left(A.size(),0);
