@@ -2,6 +2,15 @@
 using namespace std; 
 # define INF 0x3f3f3f3f  
 typedef pair<int, int> iPair; 
+0   (4,1)   (7,11)
+1   (11,7)  (4,0)   (8,2)
+2   (2,8)   (4,5)   (8,1)   (7,3)
+3   (14,5)  (7,2)   (9,4)
+4   (10,5)  (9,3)
+5   (4,2)   (2,6)   (14,3)  (10,4)
+6   (6,8)   (1,7)   (2,5)   
+7   (7,8)   (1,6)   (8,0)   (11,1)
+8   (2,2)   (7,7)   (6,6)   
 void Graph::shortestPath(int src) 
 { 
     priority_queue< iPair, vector <iPair> , greater<iPair> > pq; 
