@@ -2,27 +2,6 @@
 using namespace std; 
 # define INF 0x3f3f3f3f  
 typedef pair<int, int> iPair; 
-
-class Graph 
-{ 
-    int V; 
-    list< pair<int, int> > *adj; 
-  
-public: 
-    Graph(int V);
-    void addEdge(int u, int v, int w); 
-    void shortestPath(int s); 
-}; 
-Graph::Graph(int V) 
-{ 
-    this->V = V; 
-    adj = new list<iPair> [V]; 
-}   
-void Graph::addEdge(int u, int v, int w) 
-{ 
-    adj[u].push_back(make_pair(v, w)); 
-    adj[v].push_back(make_pair(u, w)); 
-} 
 void Graph::shortestPath(int src) 
 { 
     priority_queue< iPair, vector <iPair> , greater<iPair> > pq; 
