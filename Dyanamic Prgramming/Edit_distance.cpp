@@ -9,7 +9,6 @@ int Solution::minDistance(string A, string B) {
             if(A[j-1]!=B[i-1])
                 dp[i][j]=min(min(dp[i][j-1],dp[i-1][j-1]),dp[i-1][j])+1;
             else
-                dp[i][j]=dp[i-1][j-1];
-       
+                dp[i][j]=dp[i-1][j-1];  
     return dp[B.length()][A.length()];
 }
