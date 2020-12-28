@@ -1,3 +1,5 @@
+// | Replace Insert |
+// | Delete    X    |
 int Solution::minDistance(string A, string B) {
     int dp[453][453];
     for(int i=1;i<=A.length();i++)  dp[0][i]=dp[0][i-1]+1;
