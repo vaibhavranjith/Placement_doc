@@ -32,8 +32,20 @@ void merge(int a,int b){
 vector<int> solve(int n,vector<int> &b,vector<int> &c,vector<int> &d>){
   ini(n);
   vector<int> f(n,0);
-  for(int i=0;i<n-1;i++
+  for(int i=0;i<n-1;i++)
+     f[d[i]-1]=1;
   for(int i=0;i<n-1;i++)
       if(f[i]==0)
          merge(b[i],c[i]);
+  vector<int> ans;
+  for(int i=d.size()-1;i>=0;i--){
+    auto it=ms.end();
+    --it;
+    ans.push_back(*it);
+    int ind=d[i]-1;
+    merge(b[ind],c[ind]);
+  }
+  reverse(ans.begin(),ans.end());
+  return ans;
+}
   
