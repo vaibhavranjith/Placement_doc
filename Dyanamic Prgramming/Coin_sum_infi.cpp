@@ -1,3 +1,4 @@
+
 int Solution::coinchange2(vector<int> &A, int B) {
     long table[B+1]; 
     memset(table, 0, sizeof(table)); 
