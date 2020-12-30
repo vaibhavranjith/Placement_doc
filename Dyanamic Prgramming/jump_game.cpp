@@ -1,3 +1,13 @@
+//top down 
+int Solution::canJump(vector<int> &arr) {
+    int ind=0;
+    for(int i=arr.size()-1;i>=0;i--)
+        if(ind<=arr[i]+i)
+            ind=i;
+    return ind==0;
+}
+
+//bottom-top approach
 int Solution::canJump(vector<int> &arr) {
     vector<bool> dp(arr.size(),false);
     dp[0]=true;
@@ -9,3 +19,4 @@ int Solution::canJump(vector<int> &arr) {
             }
     return dp[arr.size()-1];
 }
+
