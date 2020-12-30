@@ -1,4 +1,3 @@
-//deep dive in b2b swe https://www.youtube.com/watch?v=fV-TF4OvZpk
 int Solution::lis(const vector<int> &A) {
     vector<int> dp(A.size(),1);
     for(int i=1;i<A.size();i++)
