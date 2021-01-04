@@ -1,4 +1,6 @@
 // find the sum of factors for each element including 1 and itself.
+
+//method1: based on formula sum of factors=(1+ p1^1+ p1^2+ ... + p1^a1)*(1+ p2^1+ p2^2+ ... + p2^a2)...
 int sumofFactors(int n) { 
     int res = 1; 
     for (int i = 2; i <= sqrt(n); i++) {
