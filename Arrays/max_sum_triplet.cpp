@@ -6,11 +6,10 @@ int getLowValue(set<int>& lowValue, int& n)
 }
 int maxTripletSum(int arr[], int n)
 {
-    int maxSuffArr[n + 1];
+    int maxSuffArr[n + 1],ans = 0;
     maxSuffArr[n] = 0;
     for (int i = n - 1; i >= 0; --i)
         maxSuffArr[i] = max(maxSuffArr[i + 1], arr[i]);
-    int ans = 0;
     set<int> lowValue;
     lowValue.insert(INT_MIN);
     for (int i = 0; i < n - 1; ++i) 
