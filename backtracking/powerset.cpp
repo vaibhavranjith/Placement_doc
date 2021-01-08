@@ -15,6 +15,24 @@ vector<vector<int>> subsets(vector<int>& nums) {
         return pows;
 }
 
+//cascading bizarrness: For some reason this code runs faster than the above one. Like I get that this one is not using temproary variables. THe bizarness
+// is that when I removed the sorting it still worked but the time increased form 0ms to 4ms.
+
+ vector<vector<int>> subsets(vector<int>& nums) {
+        vector<vector<int>> res(1,vector<int>());
+        sort(nums.begin(),nums.end());
+        for(int i=0;i<nums.size();i++)
+        {
+            int n=res.size();
+            for(int j=0;j<n;j++)
+            {
+                res.push_back(res[j]);
+                res.back().push_back(nums[i]);
+            }
+        }
+        return res;
+}
+
 
 //Backtracking
 class Solution {
