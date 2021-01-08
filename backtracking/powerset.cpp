@@ -14,3 +14,28 @@ vector<vector<int>> subsets(vector<int>& nums) {
         }
         return pows;
 }
+
+
+//Backtracking
+class Solution {
+public:
+    int k,n;
+    vector<vector<int>> output;
+    void backtrack(int first,vector<int> &cur,vector<int> nums){
+        if(cur.size()==k)
+            output.push_back(cur);
+        for(int i=first;i<n;i++){
+            cur.push_back(nums[i]);
+            backtrack(i+1,cur,nums);
+            cur.pop_back();
+        }
+    } 
+    vector<vector<int>> subsets(vector<int>& nums) {
+          n=nums.size();
+          for(k=0;k<n+1;k++){
+            vector<int> temp(0,0);
+            backtrack(0,temp,nums);
+          }
+          return output;
+    }
+};
