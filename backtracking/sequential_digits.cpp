@@ -20,4 +20,4 @@ vector<int> sequentialDigits(int low, int high) {
             if(seq[i]>=low and seq[i] <=high)
                 ans.push_back(seq[i]);
         return ans;
-    }
+}
