@@ -15,7 +15,7 @@ int numSquares(int n) {
 
 
 
-// Legendre theorem based very fast and uses way less memory: brilliant !!!
+// Legendre theorem based very fast and uses way less memory: brilliant !!! credits to some leetcode user.
 
 int numSquares(int n) {
         //we will use the  legendre's theorem. The answer will be betwen 1-4. 4 when the number is of the form of : 4a(8b+7).
